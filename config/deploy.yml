@@ -6,7 +6,8 @@ image: mpressen/joshio1_part1
 
 # Deploy to these servers.
 servers:
-  - 51.44.9.10
+  web:
+    - 51.44.9.10
 
 # Credentials for your image host.
 registry:
@@ -47,6 +48,9 @@ ssh:
 #     host: ssh://app@192.168.0.1
 builder:
   multiarch: false
+
+volumes: 
+  - "storage:/rails/storage"
 
 # Use accessory services (secrets come from .env).
 # accessories:
