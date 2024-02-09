@@ -1,0 +1,22 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (]8;;file://max/lib/systemd/system/docker.service/lib/systemd/system/docker.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Fri 2024-02-09 08:59:42 CET; 1h 11min ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: ]8;;https://docs.docker.comhttps://docs.docker.com]8;;
+   Main PID: 51654 (dockerd)
+      Tasks: 12
+     Memory: 32.0M
+        CPU: 1.578s
+     CGroup: /system.slice/docker.service
+             └─[0;38;5;245m51654 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock[0m
+
+Feb 09 08:59:41 max systemd[1]: Starting docker.service - Docker Application Container Engine...
+Feb 09 08:59:41 max dockerd[51654]: time="2024-02-09T08:59:41.525873855+01:00" level=info msg="Starting up"
+Feb 09 08:59:41 max dockerd[51654]: time="2024-02-09T08:59:41.526604075+01:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Feb 09 08:59:41 max dockerd[51654]: time="2024-02-09T08:59:41.838568819+01:00" level=info msg="Loading containers: start."
+Feb 09 08:59:42 max dockerd[51654]: time="2024-02-09T08:59:42.078231053+01:00" level=info msg="Loading containers: done."
+Feb 09 08:59:42 max dockerd[51654]: time="2024-02-09T08:59:42.218280136+01:00" level=info msg="Docker daemon" commit=f417435 containerd-snapshotter=false storage-driver=overlay2 version=25.0.3
+Feb 09 08:59:42 max dockerd[51654]: time="2024-02-09T08:59:42.218397809+01:00" level=info msg="Daemon has completed initialization"
+Feb 09 08:59:42 max dockerd[51654]: time="2024-02-09T08:59:42.341365185+01:00" level=info msg="API listen on /run/docker.sock"
+Feb 09 08:59:42 max systemd[1]: Started docker.service - Docker Application Container Engine.
+Feb 09 09:00:13 max dockerd[51654]: time="2024-02-09T09:00:13.651529186+01:00" level=info msg="ignoring event" container=19bd2f555349a87a2eb16b5064741c8e5461bfae8a3592826316209e729e8ae0 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
